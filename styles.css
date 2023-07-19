@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2,
+h3 {
+    margin-top: 0;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Welcome screen styles */
+#welcomeScreen {
+    text-align: center;
+    padding: 100px 0;
+}
+
+/* Survey screen styles */
+#surveyScreen {
+    display: none;
+    text-align: center;
+}
+
+#questionNumber {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#question {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+#ratingOptions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ratingButton {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+}
+
+.ratingButton.selected {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.ratingButton:hover {
+    background-color: #ddd;
+}
+
+#textAnswer {
+    width: 100%;
+    max-width: 400px;
+    height: 100px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+/* Thank you screen styles */
+#thankYouScreen {
+    display: none;
+    text-align: center;
+    padding: 100px 0;
+}
+
+/* Form navigation buttons styles */
+#previousButton,
+#nextButton,
+#skipButton,
+#submitButton {
+    margin: 10px;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 500px) {
+    .container {
+        padding: 10px;
+    }
+
+    #question {
+        font-size: 20px;
+    }
+
+    #textAnswer {
+        height: 80px;
+    }
+}
